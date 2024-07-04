@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #3f72af;
+}
+.container {
+  padding: 1rem 1rem 2rem;
+}
+
+.app-container {
+  background-color: #f9f7f7;
+  max-width: 37.5rem;
+  border-radius: 1rem;
+  margin-inline: auto;
+  padding: 2rem 2.8rem;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+.app-container h2 {
+  font-size: 2rem;
+  color: #3f72af;
+}
+
+.app-container span {
+  color: #ff5945;
+}
+
+.image {
+  vertical-align: middle;
+  margin-left: 1rem;
+  height: 50px;
+}
+.task-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  margin: 1.5rem 0px;
+  height: 3rem;
+  background-color: #edeef0;
+  padding-left: 20px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  align-self: stretch;
+  background: transparent;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: #ff5945;
+  color: #fff;
+  padding: 0px 25px;
+  align-self: stretch;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 40px;
+}
+li {
+  list-style-type: none;
+  flex: 1;
+  align-self: stretch;
+  font-size: 1.5rem;
+}
+.task-list {
+  padding-block: 2rem;
+  padding-inline: 1rem;
+}
+.task {
+  display: flex;
+  padding-block: 5px;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  color: black;
+  margin-block: 1rem;
+}
+
+.task button {
+  padding: 7px 20px;
+  color: black;
+  border-radius: 4px;
+}
+.task #done-btn {
+  background-color: #3f72af;
+}
+
+.task .completed {
+  text-decoration: line-through;
+  color: #3f72af;
+}
+
+@media (max-width: 460px) {
+  .app-container {
+    padding: 1.5rem;
+  }
+  .task-input {
+    padding-left: 10px;
+    margin: 18px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .app-container h2 {
+    text-align: center;
+  }
+  input {
+    width: 200px;
+  }
+  .task-list {
+    padding-block: 1rem;
+    padding-inline: 10px;
+  }
+  .task {
+    margin: 12px 0;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 410px) {
+  .task-list button {
+    padding: 4px 10px;
+  }
+}
+
+@media (max-width: 365px) {
+  .app-container {
+  }
+  li {
+    font-size: 1rem;
+  }
+  .task-list button {
+    padding: 2px 5px;
+  }
+}
